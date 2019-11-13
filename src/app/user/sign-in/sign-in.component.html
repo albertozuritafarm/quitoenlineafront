@@ -1,0 +1,20 @@
+<div class="login-page">
+    <div class="form">
+        <img class="img-responsive" src="assets/logo.png" alt="logo of Engagex">
+<form #loginForm="ngForm" class="col s12 white login-form" (ngSubmit)="OnSubmit(UserName.value,Password.value)">
+       <input type="text" #UserName ngModel name="UserName" placeholder="Username" required>
+       <input type="password" #Password ngModel name="Password" placeholder="Password" required>
+
+       <div *ngIf="isLoginError" class="red-text center alert alert-warning alert-dismissable">
+            <i class="material-icons">error</i> {{errorme}}
+    
+        </div>
+       <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+    
+
+</form>
+</div>
+<div *ngIf="showProgress" class="loadWrapper">
+        <div class="loader"></div>
+</div>
+</div>

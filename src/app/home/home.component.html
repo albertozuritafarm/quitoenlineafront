@@ -1,0 +1,205 @@
+<div class="body-home">
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0">
+      <div class="navbar-brand col-sm-4 col-md-3 mr-0"><input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"></div>
+    
+      <ul class="nav justify-content-end menu">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Displays</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link"  [routerLink]="" (click)="Logout()">Logout</a>
+          </li>
+        </ul>
+    </nav>
+    <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container main">
+          <div class="display-3 img"><button class="btn btn-lg btn-outline-primary btnlead" (click)="open(content)"><img class="img-responsive textaddlead" src="assets/adduser.png" alt="adduser"><label class="labaddlead">Add New Lead</label></button></div>
+          
+        </div>
+        <div class="container">
+          <div class="buttons-home">
+            <p><button (click)="showfisrt()"  class="butn">Show First Lead</button></p>
+            <p><button class="butnpractice">Practice Call</button></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <div class="home-card">
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-group">
+              <h5 class="card-title list-group-item active">Message Drops</h5>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Appointment Request 1 - Tom
+              <div class="col-sm-6 text-right">
+                  <img class="arrow" src="assets/arrow.png" alt="arrow" width="14px">
+                  <img class="" src="assets/delete.png" alt="delete" >
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Appointment Request 2
+              <div class="col-sm-6 text-right">
+                  <img class="arrow" src="assets/arrow.png" alt="arrow" width="14px">
+                  <img class="" src="assets/delete.png" alt="delete" >
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Happy Birtday
+              <div class="col-sm-6 text-right">
+                  <img class="arrow" src="assets/arrow.png" alt="arrow" width="14px">
+                  <img class="" src="assets/delete.png" alt="delete" >
+              </div> 
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Appointment Request 3
+              <div class="col-sm-6 text-right">
+                  <img class="arrow" src="assets/arrow.png" alt="arrow" width="14px">
+                  <img class="" src="assets/delete.png" alt="delete" >
+              </div> 
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Appointment Request 4
+              <div class="col-sm-6 text-right">
+                  <img class="arrow" src="assets/arrow.png" alt="arrow" width="14px">
+                  <img class="" src="assets/delete.png" alt="delete" >
+              </div> 
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+               <input type="text" placeholder="Enter new message name">
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 m6">
+            <ul class="list-group">
+                <h5 class="list-group-item card-title active">Feedback</h5>
+                <div class="row">
+                  <div class="col-xs-12 ">
+                    <nav>
+                      <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active inbox" id="nav-inbox-tab" data-toggle="tab" href="#nav-inbox" role="tab" aria-controls="nav-inbox" aria-selected="true"><span>Inbox</span></a>
+                        <a class="nav-item nav-link box" id="nav-box-tab" data-toggle="tab" href="#nav-box" role="tab" aria-controls="nav-box" aria-selected="false"><span>Archived</span></a>
+                        <a class="nav-item nav-link new" id="nav-new-tab" data-toggle="tab" href="#nav-new" role="tab" aria-controls="nav-new" aria-selected="false"><span class="spannew">New</span></a>
+                        <a class="nav-item nav-link reply" id="nav-reply-tab" data-toggle="tab" href="#nav-reply" role="tab" aria-controls="nav-reply" aria-selected="false"><span>Reply</span></a>
+    
+                        <a class="nav-item nav-link save" id="nav-save-tab" data-toggle="tab" href="#nav-save" role="tab" aria-controls="nav-save" aria-selected="false"><span>Save</span></a>
+                        <a class="nav-item nav-link delete" id="nav-delete-tab" data-toggle="tab" href="#nav-delete" role="tab" aria-controls="nav-delete" aria-selected="false"><span>Delete</span></a>
+                      </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-inbox" role="tabpanel" aria-labelledby="nav-inbox-tab">
+                        <h2>Inbox</h2>
+                        <hr>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+                      </div>
+                      <div class="tab-pane fade" id="nav-box" role="tabpanel" aria-labelledby="nav-box-tab">
+                        <h2>Archived</h2>
+                        <hr>
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                      </div>
+                      <div class="tab-pane fade" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
+                        <h2>New</h2>
+                        <hr>
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                      </div>
+                      <div class="tab-pane fade" id="nav-reply" role="tabpanel" aria-labelledby="nav-reply-tab">
+                        <h2>Reply</h2>
+                        <hr>
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                      </div>
+                      <div class="tab-pane fade" id="nav-save" role="tabpanel" aria-labelledby="nav-save-tab">
+                        <h2>Save</h2>
+                        <hr>
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                      </div>
+                      <div class="tab-pane fade" id="nav-delete" role="tabpanel" aria-labelledby="nav-delete-tab">
+                        <h2>Delete</h2>
+                        <hr>
+                        Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                      </div> 
+                    </div>
+                  
+                  </div>
+                </div>
+        
+              
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    
+    <ng-template #content let-modal  let-d="dismiss">
+        <div class="modal-header">
+           <h4 class="modal-title" id="modal-basic-title">Add Lead</h4>
+           <button type="button" class="close" aria-label="Close" (click)="d('Close click')">
+           <span aria-hidden="true">&times;</span>
+           </button>
+        </div>
+        <div class="modal-body">
+           <form class="form-horizontal formleadadd">
+              <div class="row">
+                 <!-- Text input-->
+                 <div class="col-md-12">
+                    <div class="form-group">
+                       <label class="col-md-4 control-label" for="leadname"></label>  
+                       <input  id="leadname" name="leadname" type="text" placeholder="Lead Name" class="form-control input-md" required="">
+                    </div>
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="col-md-4">
+                    <!-- Text input-->
+                    <div class="form-group">
+                       <label class="col-md-4 control-label" for="phonenumber"></label>  
+                       <input  id="phonenumber" name="phonenumber"  type='text' prefix="+ " mask="(000) 000 0000" placeholder="Phone number" class="form-control input-md" required="">
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                       <label class="col-md-4 control-label" for="calltype"></label>
+                       <select id="calltype" name="calltype" class="form-control">
+                          <option value="0">Campaign</option>
+                          <option *ngFor="let x of campaigns" [value]="x.id">{{x.name}}</option>
+                      </select>
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                    <div class="form-group">
+                       <label for="dateOfBirth"></label>
+                       <div class="input-group">
+                          <input  id="dp" [minDate]="todayDate" class="form-control" placeholder="Specific Call Date (optional)" (dateSelect)="changedate($event)" name="dp" ngbDatepicker #dp="ngbDatepicker">
+                          <div class="input-group-append">
+                             <button class="btn btn-outline-light p-0 "
+                                 (click)="dp.toggle()" type="button"><i class="material-icons">
+                                    date_range
+                                    </i></button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </form>
+           <ngb-alert  [type]="type" id="message" [dismissible]="false">
+              {{message}}
+            </ngb-alert>
+        </div>
+        <div class="modal-footer">
+              <div class="col-md-6 text-center"><button type="button" (click)="savelead('s')" class="btn btn-outline-dark blue-color">Save</button></div>
+              <div class="col-md-6 text-center"><button type="button" (click)="savelead('a')" class="btn btn-outline-dark green-color">Save and Open Lead</button></div>
+        </div>
+      </ng-template>
